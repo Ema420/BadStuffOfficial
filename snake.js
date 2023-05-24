@@ -130,7 +130,7 @@ class Game {
 
   // Add a food somewhere in the game (randomly)
   addFood() {
-    var x = Math.floor(Math.random() * Math.round(this.width / this.tileWidth));
+    var x = Math.floor(Math.random() * Math.round(this.width / this.tileWidth) - 1);
     var y = Math.floor(Math.random() * Math.round(this.height / this.tileHeight));
     var board = document.querySelector("#game");
 console.log(Math.round(this.width / this.tileWidth));
