@@ -1,0 +1,94 @@
+<!--
+    MIT License
+
+    Copyright (c) 2017 Le Garage
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+-->
+
+<html>
+
+<head>
+    <title>BadStuff Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://dl.dafont.com/dl/?f=river_adventurer"/>
+    <script src="swiped-events.js"></script>
+    <script src="snake.js"></script>
+    
+    
+</head>
+
+<body onload="showLeaderboard()">
+        <div class="root" id="root">
+            <div id="menu">
+                <header>
+                    <div id ="overlay"></div>
+                    <div id="title">
+                        <img src="img/Titolo.png">
+                        <div id="istr">
+                        <p>
+                            Corre l'anno 2000, la Nokia annuncia quello che poi diventerà una pietra miliare ("pietra" anche nel senso letterario) nel mondo dei cellulari: 
+                            <br>il modello 3310. 
+                            <br>Indistruttibile, intramontabile, questo modello viene ricordato per un videogioco che ha segnato l'infanzia di molti di noi...
+                            <br>Non ti viene in mente niente?
+                        </p>
+                        <p>
+                            I tre nostalgici con il maggior punteggio potranno:
+                            <span>
+                                <br>1. Vincere un ingresso gratuito
+                                <br>2. Vincere una consumazione (drink)
+                                <br>3. Vincere una copia formato poster della locandina
+                            </span>
+                        </p>
+                        <p>
+                            I vincitori ritireranno il ticket all'ingresso il giorno stesso dell'evento, adesso tuffati nel passato e divertiti! Good Luck!<br>
+                        </p>
+                        <span>
+                            Istruzioni:<br>
+                            Fai scorrere il dito verso la direzione desiderata e raccogli più fattoni possibili.<br>
+                            Attento agli ostacoli e a non morderti la coda!
+                        </span>
+                        <br>
+                        <input type="button" value="Start" onclick="play()"></input>
+                    </div>
+                </header>
+            </div>
+        </div>
+        
+        <div class="game-board" name="game-board" class="hide" id="game-board">
+            <canvas id="game" class="hide"></canvas>
+            <img id="ghost" src="img/fantasma.png" style="display:none;"/>
+        </div>
+        <!-- left -->
+        <div class="score-panel" id="score-panel">
+            <button id="restart" class="hide" onclick="restart()">Start New</button>
+            <string id="punteggio">Classifica: </string>
+
+            
+            <string id="hide" class="score">Score:
+                <span id="score" class="score"></span>
+            </string>
+        </div>
+    
+    <audio id="theme" src="mp3/Citadel Station.mp3"></audio>
+    <audio id="over" src="mp3/gameover.mp3"></audio>
+</body>
+
+</html>

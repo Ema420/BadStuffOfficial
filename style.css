@@ -1,0 +1,141 @@
+body {
+  
+  background-image: url("img/sfondo.png");
+  background-position: top;
+  background-size: cover;
+  z-index: -2;
+  overscroll-behavior: contain;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    
+  }
+  
+  canvas {
+    background-color: #ffffff; 
+    position: static;
+    width: 80%;
+    height: 80%;
+  }
+  
+  .banner {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    border: 0;
+  }
+  
+  .game-board {
+    margin: 20px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .score-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #restart {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;      
+  }
+
+  #menu {
+    
+    background-image: url("sfondo.png");
+    background-position: top;
+    background-size: cover;
+    z-index: -2
+  }
+  #istr {
+    margin-top: -22px;
+  }
+  #food {
+    width: 70%;
+    height: 70%;
+  }
+  img {
+    width: 70%;
+    height: 70%;
+  }
+  input {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 0px;
+    font-size: 22px;
+    z-index: 1;
+  }
+  input:hover {
+    background-color: #991d17;
+  }
+
+  @font-face {
+    font-family: "test";
+    src: url("font/test.ttf");
+  }
+  @font-face {
+    font-family: "test1";
+    src: url("font/Destone.otf");
+  }
+  
+  p, span, string {
+    font-family: "test", sans-serif;
+    font-size: 17px;
+    z-index: 0;
+    color: white;
+  }
+  string {
+    letter-spacing: 0.2px;
+  }
+  .score{
+    font-size: 50px;
+    margin-top: -20px;
+  }
+  #hide{
+    display: none;
+  }
+  #overlay {
+    background-color:
+      rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  header {
+    position: relative;
+    z-index: -2;
+  }
+  input {
+    font-family: "test";
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+  }
+  button {
+    height: 100%;
+    width: 100%;
+  }

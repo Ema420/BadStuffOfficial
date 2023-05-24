@@ -1,0 +1,48 @@
+body {
+  
+    background-image: url("img/sfondo.png");
+    background-position: top;
+    background-size: cover;
+    z-index: 0;
+}
+
+@font-face {
+    font-family: "test";
+    src: url("font/test.ttf");
+}
+
+@font-face {
+    font-family: "test1";
+    src: url("font/Destone.otf");
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 50%;
+   
+
+}  
+
+input {
+    width: 25vw;
+    height: 4vh;
+    font-family: "test";
+    border-radius: 10px;
+    border: black;
+    
+
+}
+#button {
+    font-family: "test";
+    height: 2vh;
+    width: 20%;
+    margin-top: 5px;
+}
+#button:hover{
+    background-color: #991d17;
+}
